@@ -6,6 +6,7 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
+// addition Calculator
 
 app.get("/calculator", function(req, res) {
   res.sendFile(__dirname + "/index.html");
@@ -19,6 +20,8 @@ app.post("/calculator", function(req, res) {
 
   res.send("The result of the calculation is " + result);
 });
+
+// bmi calculator
 
 app.get("/bmicalculator", function(req, res) {
   res.sendFile(__dirname + "/bmiCalculator.html");
